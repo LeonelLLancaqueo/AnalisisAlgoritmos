@@ -21,7 +21,7 @@ public class UsoDeScanner {
         
         return true;
     }
-    private static int cuantosNPrimosAux(int n){
+    private static int cuantosNPrimos(int n){
         int resp=0;
         for(int i=1; i< n; i++){
             if(esPrimo(i)){
@@ -30,13 +30,7 @@ public class UsoDeScanner {
         }
         return resp;
     }
-    public static void cuantosNPrimos(){
-        int n;
-        Scanner s= new Scanner(System.in); 
-        System.out.print("ingrese un numero entero: ");
-        n= s.nextInt();
-        System.out.println(cuantosNPrimosAux(n));
-    }
+   
 
     public static void juegoAdivinar(){
         final int MAXIMO= 20;
@@ -67,7 +61,13 @@ public class UsoDeScanner {
 
     
     public static void main(String[] args) {
-        juegoAdivinar();
+        //juegoAdivinar();
+
+        int n;
+        Scanner s= new Scanner(System.in); 
+        System.out.print("ingrese un numero entero: ");
+        n= s.nextInt();
+        System.out.println(cuantosNPrimos(n));
     }
     
 
